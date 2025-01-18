@@ -1,0 +1,17 @@
+2024/12/25-19:04:12.337 dd67 Creating DB /home/ysh/.config/Notion/Partitions/notion/Local Storage/leveldb since it was missing.
+2024/12/25-19:04:12.340 dd67 Reusing MANIFEST /home/ysh/.config/Notion/Partitions/notion/Local Storage/leveldb/MANIFEST-000001
+2024/12/25-19:05:46.368 dd68 Level-0 table #5: started
+2024/12/25-19:05:46.381 dd68 Level-0 table #5: 542184 bytes OK
+2024/12/25-19:05:46.383 dd68 Delete type=0 #3
+2024/12/25-19:08:52.492 dd68 Level-0 table #7: started
+2024/12/25-19:08:52.505 dd68 Level-0 table #7: 1087195 bytes OK
+2024/12/25-19:08:52.507 dd68 Delete type=0 #4
+2024/12/25-19:10:25.613 dd68 Level-0 table #9: started
+2024/12/25-19:10:25.654 dd68 Level-0 table #9: 544611 bytes OK
+2024/12/25-19:10:25.657 dd68 Delete type=0 #6
+2024/12/25-19:15:13.387 dd67 Level-0 table #11: started
+2024/12/25-19:15:13.401 dd67 Level-0 table #11: 547788 bytes OK
+2024/12/25-19:15:13.403 dd67 Delete type=0 #8
+2024/12/25-19:17:13.387 dd68 Level-0 table #13: started
+2024/12/25-19:17:13.401 dd68 Level-0 table #13: 550461 bytes OK
+2024/12/25-19:17:13.403 dd68 Delete type=0 #10

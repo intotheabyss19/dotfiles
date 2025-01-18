@@ -1,0 +1,522 @@
+[2024-12-06 19:27:17.737] [28805] (engine.cpp:506): Created native Engine, time: Fri Dec  6 19:27:17 2024 IST, logPath: /home/ysh/.config/discord/logs/, logLevel: 2
+[2024-12-06 19:27:17.737] [28805] (input_volume_stats_reporter.cc:98): Will not log any `WebRTC.Audio.Apm.AppliedInputVolume.*` histogram stats.
+[2024-12-06 19:27:17.737] [28805] (input_volume_stats_reporter.cc:98): Will not log any `WebRTC.Audio.Apm.RecommendedInputVolume.*` histogram stats.
+[2024-12-06 19:27:17.737] [28805] (audio_processing_impl.cc:695): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2024-12-06 19:27:17.737] [28805] (audio_processing_impl.cc:708): AudioProcessing: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 0 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-06 19:27:17.737] [28805] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-06 19:27:17.737] [28805] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
+[2024-12-06 19:27:17.737] [28805] (audio_device_impl.cc:143): current platform is Linux
+[2024-12-06 19:27:17.737] [28805] (audio_device_impl.cc:162): CreatePlatformSpecificObjects
+[2024-12-06 19:27:17.737] [28805] (audio_device_impl.cc:991): PlatformAudioLayer
+[2024-12-06 19:27:17.737] [28805] (audio_device_impl.cc:298): PulseAudio support is enabled.
+[2024-12-06 19:27:17.737] [28805] (audio_device_impl.cc:303): Linux PulseAudio APIs will be utilized
+[2024-12-06 19:27:17.737] [28805] (audio_device_impl.cc:344): AttachAudioBuffer
+[2024-12-06 19:27:17.737] [28805] (audio_device_buffer.cc:182): SetRecordingSampleRate(0)
+[2024-12-06 19:27:17.737] [28805] (audio_device_buffer.cc:188): SetPlayoutSampleRate(0)
+[2024-12-06 19:27:17.737] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(0)
+[2024-12-06 19:27:17.737] [28805] (audio_device_buffer.cc:208): SetPlayoutChannels(0)
+[2024-12-06 19:27:17.737] [28805] (audio_device_impl.cc:354): ActiveAudioLayer
+[2024-12-06 19:27:17.737] [28805] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
+[2024-12-06 19:27:17.737] [28805] (audio_device_impl.cc:143): current platform is Linux
+[2024-12-06 19:27:17.737] [28805] (audio_device_impl.cc:162): CreatePlatformSpecificObjects
+[2024-12-06 19:27:17.737] [28805] (audio_device_impl.cc:991): PlatformAudioLayer
+[2024-12-06 19:27:17.737] [28805] (audio_device_impl.cc:298): PulseAudio support is enabled.
+[2024-12-06 19:27:17.737] [28805] (audio_device_impl.cc:303): Linux PulseAudio APIs will be utilized
+[2024-12-06 19:27:17.737] [28805] (audio_device_impl.cc:344): AttachAudioBuffer
+[2024-12-06 19:27:17.737] [28805] (audio_device_buffer.cc:182): SetRecordingSampleRate(0)
+[2024-12-06 19:27:17.737] [28805] (audio_device_buffer.cc:188): SetPlayoutSampleRate(0)
+[2024-12-06 19:27:17.737] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(0)
+[2024-12-06 19:27:17.737] [28805] (audio_device_buffer.cc:208): SetPlayoutChannels(0)
+[2024-12-06 19:27:17.737] [28805] (input_volume_stats_reporter.cc:98): Will not log any `WebRTC.Audio.Apm.AppliedInputVolume.*` histogram stats.
+[2024-12-06 19:27:17.737] [28805] (input_volume_stats_reporter.cc:98): Will not log any `WebRTC.Audio.Apm.RecommendedInputVolume.*` histogram stats.
+[2024-12-06 19:27:17.737] [28805] (audio_processing_impl.cc:695): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2024-12-06 19:27:17.737] [28805] (audio_processing_impl.cc:708): AudioProcessing: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 0 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-06 19:27:17.737] [28805] (audio_engine.cpp:473): Creating audio engine: standard
+[2024-12-06 19:27:17.737] [28805] (audio_device_impl.cc:364): Init
+[2024-12-06 19:27:17.741] [28805] (audio_device_impl.cc:364): Init
+[2024-12-06 19:27:17.743] [28805] (audio_coding.cpp:156): Using software Opus decoder
+[2024-12-06 19:27:17.743] [28805] (audio_coding.cpp:173): Using software Opus encoder
+[2024-12-06 19:27:17.743] [28805] (audio_device_impl.cc:895): RegisterAudioCallback
+[2024-12-06 19:27:17.743] [28805] (audio_device_impl.cc:547): SetMicrophoneVolume(100)
+[2024-12-06 19:27:17.743] [28805] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-06 19:27:17.743] [28805] (audio_device_impl.cc:895): RegisterAudioCallback
+[2024-12-06 19:27:17.743] [28805] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-06 19:27:17.743] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 19:27:17.743] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 19:27:17.743] [28805] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-06 19:27:17.743] [28805] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-06 19:27:17.744] [28805] (audio_device_impl.cc:573): output: 1
+[2024-12-06 19:27:17.744] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 19:27:17.744] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 19:27:17.744] [28805] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-06 19:27:17.744] [28805] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-06 19:27:17.744] [28805] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-06 19:27:17.744] [28805] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2024-12-06 19:27:17.744] [28805] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-12-06 19:27:17.744] [28805] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-12-06 19:27:17.744] [28805] (audio_device_impl.cc:619): output: 1
+[2024-12-06 19:27:17.744] [28805] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-12-06 19:27:17.744] [28805] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-06 19:27:17.744] [28805] (audio_device_impl.cc:911): BuiltInAECIsAvailable
+[2024-12-06 19:27:17.744] [28805] (audio_device_generic.cc:32): BuiltInAECIsAvailable: Not supported on this platform
+[2024-12-06 19:27:17.744] [28805] (audio_device_impl.cc:914): output: 0
+[2024-12-06 19:27:17.744] [28805] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-06 19:27:17.744] [28805] (matched_filter.cc:141): AEC3: Pre echo configuration:  threshold = 0.5, mode =  3.
+[2024-12-06 19:27:17.744] [28805] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[2024-12-06 19:27:17.744] [28805] (echo_canceller3.cc:793): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
+[2024-12-06 19:27:17.744] [28805] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-06 19:27:17.744] [28805] (clipping_predictor.cc:358): [AGC2] Clipping prediction disabled.
+[2024-12-06 19:27:17.744] [28805] (agc_manager_direct.cc:481): [agc] analog controller enabled: yes
+[2024-12-06 19:27:17.744] [28805] (agc_manager_direct.cc:484): [agc] Min mic level: 12 (overridden: no)
+[2024-12-06 19:27:17.744] [28805] (captured_audio_processor.cpp:127): SetNoiseCancellation: 0
+[2024-12-06 19:27:17.744] [28805] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-06 19:27:17.744] [28805] (field_trial.cc:164): Setting field trial string:WebRTC-Audio-NetEqDecisionLogicConfig/reinit_after_expands:100/
+[2024-12-06 19:27:17.748] [28805] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-06 19:27:17.748] [28805] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-06 19:27:17.748] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 19:27:17.748] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 19:27:17.748] [28805] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-06 19:27:17.748] [28805] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-06 19:27:17.748] [28805] (audio_device_impl.cc:573): output: 1
+[2024-12-06 19:27:17.748] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 19:27:17.748] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 19:27:17.748] [28805] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-06 19:27:17.748] [28805] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-06 19:27:17.748] [28805] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-06 19:27:17.748] [28805] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2024-12-06 19:27:17.748] [28805] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-06 19:27:17.748] [28805] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-12-06 19:27:17.748] [28805] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-12-06 19:27:17.749] [28805] (audio_device_impl.cc:619): output: 1
+[2024-12-06 19:27:17.749] [28805] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-12-06 19:27:17.749] [28805] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-06 19:27:17.749] [28805] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-06 19:27:17.749] [28805] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-06 19:27:17.749] [28805] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-06 19:27:17.749] [28805] (engine_audio_transport.cpp:547): EngineAudioTransport::SetSidechainCompression 0
+[2024-12-06 19:27:17.749] [28805] (engine_audio_transport.cpp:558): EngineAudioTransport::ApplySidechainCompressionSettings  threshold: -32.5 ratio: 0.433333
+[2024-12-06 19:27:17.749] [28805] (engine.cpp:220): *** OnDevicesChanged:
+[2024-12-06 19:27:17.749] [28805] (engine.cpp:221): * audioInput:
+[2024-12-06 19:27:17.749] [28805] (engine.cpp:226): * audioOutput:
+[2024-12-06 19:27:17.749] [28805] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-06 19:27:17.749] [28805] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-06 19:27:17.749] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 19:27:17.749] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 19:27:17.749] [28805] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-06 19:27:17.749] [28805] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-06 19:27:17.749] [28805] (audio_device_impl.cc:573): output: 1
+[2024-12-06 19:27:17.749] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 19:27:17.749] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 19:27:17.749] [28805] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-06 19:27:17.749] [28805] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-06 19:27:17.749] [28805] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-06 19:27:17.749] [28805] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2024-12-06 19:27:17.749] [28805] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-06 19:27:17.749] [28805] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-12-06 19:27:17.749] [28805] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-12-06 19:27:17.750] [28805] (audio_device_impl.cc:619): output: 1
+[2024-12-06 19:27:17.750] [28805] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-12-06 19:27:17.750] [28805] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-06 19:27:17.750] [28805] (engine.cpp:220): *** OnDevicesChanged:
+[2024-12-06 19:27:17.750] [28805] (engine.cpp:221): * audioInput:
+[2024-12-06 19:27:17.750] [28805] (engine.cpp:224): - default: Alder Lake PCH-P High Definition Audio Controller Headphones Stereo Microphone ()
+[2024-12-06 19:27:17.750] [28805] (engine.cpp:224): - Alder Lake PCH-P High Definition Audio Controller Headphones Stereo Microphone ()
+[2024-12-06 19:27:17.750] [28805] (engine.cpp:224): - Alder Lake PCH-P High Definition Audio Controller Digital Microphone ()
+[2024-12-06 19:27:17.750] [28805] (engine.cpp:226): * audioOutput:
+[2024-12-06 19:27:17.750] [28805] (engine.cpp:229): - default: Alder Lake PCH-P High Definition Audio Controller Headphones ()
+[2024-12-06 19:27:17.750] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller HDMI / DisplayPort 3 Output ()
+[2024-12-06 19:27:17.750] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller HDMI / DisplayPort 2 Output ()
+[2024-12-06 19:27:17.750] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller HDMI / DisplayPort 1 Output ()
+[2024-12-06 19:27:17.750] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller Headphones ()
+[2024-12-06 19:27:17.900] [28805] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-06 19:27:17.900] [28805] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-06 19:27:17.900] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 19:27:17.900] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 19:27:17.900] [28805] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-06 19:27:17.901] [28805] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-06 19:27:17.901] [28805] (audio_device_impl.cc:573): output: 1
+[2024-12-06 19:27:17.901] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 19:27:17.901] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 19:27:17.901] [28805] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-06 19:27:17.901] [28805] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-06 19:27:17.901] [28805] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-06 19:27:17.901] [28805] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2024-12-06 19:27:17.901] [28805] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-06 19:27:17.901] [28805] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-12-06 19:27:17.902] [28805] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-12-06 19:27:17.902] [28805] (audio_device_impl.cc:619): output: 1
+[2024-12-06 19:27:17.902] [28805] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-12-06 19:27:17.902] [28805] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-06 19:27:17.902] [28805] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-06 19:27:17.902] [28805] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-06 19:27:17.902] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 19:27:17.902] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 19:27:17.902] [28805] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-06 19:27:17.902] [28805] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-06 19:27:17.903] [28805] (audio_device_impl.cc:573): output: 1
+[2024-12-06 19:27:17.903] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 19:27:17.903] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 19:27:17.903] [28805] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-06 19:27:17.903] [28805] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-06 19:27:17.903] [28805] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-06 19:27:17.903] [28805] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2024-12-06 19:27:17.903] [28805] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-06 19:27:17.903] [28805] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-12-06 19:27:17.903] [28805] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-12-06 19:27:17.903] [28805] (audio_device_impl.cc:619): output: 1
+[2024-12-06 19:27:17.903] [28805] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-12-06 19:27:17.903] [28805] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-06 19:27:19.982] [28785] JS console: [GatewaySocket] [FAST CONNECT] successfully took over websocket, state:
+[2024-12-06 19:27:19.982] [28785] JS console: [GatewaySocket] [CONNECTED] wss://gateway.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 0 ms
+[2024-12-06 19:27:20.969] [28785] JS console: [GatewaySocket] [READY] took 986ms, as 242e0642ecb5d0e9a785016bb72a9e53
+[2024-12-06 19:27:21.026] [28785] JS console: [GatewaySocket] [READY_SUPPLEMENTAL] took 1044ms
+[2024-12-06 19:27:46.000] [28920] (region_latency_tester.cpp:72): Sending 5 latency test pings to region india
+[2024-12-06 19:27:46.000] [28920] (region_latency_tester.cpp:72): Sending 5 latency test pings to region hongkong
+[2024-12-06 19:27:46.000] [28920] (region_latency_tester.cpp:72): Sending 5 latency test pings to region singapore
+[2024-12-06 19:27:46.000] [28920] (region_latency_tester.cpp:72): Sending 5 latency test pings to region dubai
+[2024-12-06 19:27:46.000] [28920] (region_latency_tester.cpp:72): Sending 5 latency test pings to region japan
+[2024-12-06 19:27:51.003] [28920] (region_latency_tester.cpp:176): Timing out 2 remaining latency test pings
+[2024-12-06 19:27:51.003] [28920] (region_latency_tester.cpp:283): Average RTT for region india is 64.5
+[2024-12-06 19:27:51.003] [28920] (region_latency_tester.cpp:283): Average RTT for region hongkong is 147.75
+[2024-12-06 19:27:51.003] [28920] (region_latency_tester.cpp:283): Average RTT for region singapore is 122.25
+[2024-12-06 19:27:51.003] [28920] (region_latency_tester.cpp:283): Average RTT for region dubai is 406
+[2024-12-06 19:27:51.003] [28920] (region_latency_tester.cpp:283): Average RTT for region japan is 187
+[2024-12-06 19:41:00.559] [28805] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-06 19:41:00.559] [28805] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-06 19:41:00.559] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 19:41:00.559] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 19:41:00.559] [28805] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-06 19:41:00.560] [28805] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-06 19:41:00.561] [28805] (audio_device_impl.cc:573): output: 0
+[2024-12-06 19:41:00.561] [28805] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2024-12-06 19:41:00.561] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(1)
+[2024-12-06 19:41:00.561] [28805] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-06 19:41:00.561] [28805] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-06 19:41:00.561] [28805] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-06 19:41:00.561] [28805] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2024-12-06 19:41:00.561] [28805] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-06 19:41:00.561] [28805] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-12-06 19:41:00.562] [28805] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-12-06 19:41:00.563] [28805] (audio_device_impl.cc:619): output: 1
+[2024-12-06 19:41:00.563] [28805] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-12-06 19:41:00.563] [28805] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-06 19:41:00.563] [28805] (engine.cpp:220): *** OnDevicesChanged:
+[2024-12-06 19:41:00.563] [28805] (engine.cpp:221): * audioInput:
+[2024-12-06 19:41:00.563] [28805] (engine.cpp:224): - default: Mustang TWS ()
+[2024-12-06 19:41:00.563] [28805] (engine.cpp:224): - Alder Lake PCH-P High Definition Audio Controller Headphones Stereo Microphone ()
+[2024-12-06 19:41:00.563] [28805] (engine.cpp:224): - Alder Lake PCH-P High Definition Audio Controller Digital Microphone ()
+[2024-12-06 19:41:00.563] [28805] (engine.cpp:224): - Mustang TWS ()
+[2024-12-06 19:41:00.563] [28805] (engine.cpp:226): * audioOutput:
+[2024-12-06 19:41:00.563] [28805] (engine.cpp:229): - default: Mustang TWS ()
+[2024-12-06 19:41:00.563] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller HDMI / DisplayPort 3 Output ()
+[2024-12-06 19:41:00.563] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller HDMI / DisplayPort 2 Output ()
+[2024-12-06 19:41:00.563] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller HDMI / DisplayPort 1 Output ()
+[2024-12-06 19:41:00.563] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller Headphones ()
+[2024-12-06 19:41:00.563] [28805] (engine.cpp:229): - Mustang TWS ()
+[2024-12-06 19:41:00.602] [28805] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-06 19:41:00.602] [28805] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-06 19:41:00.602] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 19:41:00.602] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 19:41:00.602] [28805] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-06 19:41:00.603] [28805] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-06 19:41:00.604] [28805] (audio_device_impl.cc:573): output: 0
+[2024-12-06 19:41:00.604] [28805] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2024-12-06 19:41:00.604] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(1)
+[2024-12-06 19:41:00.604] [28805] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-06 19:41:00.604] [28805] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-06 19:41:00.604] [28805] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-06 19:41:00.604] [28805] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2024-12-06 19:41:00.604] [28805] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-06 19:41:00.604] [28805] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-12-06 19:41:00.605] [28805] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-12-06 19:41:00.605] [28805] (audio_device_impl.cc:619): output: 1
+[2024-12-06 19:41:00.605] [28805] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-12-06 19:41:00.605] [28805] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-06 19:41:48.591] [28805] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-06 19:41:48.591] [28805] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-06 19:41:48.591] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 19:41:48.591] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 19:41:48.591] [28805] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-06 19:41:48.591] [28805] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-06 19:41:48.592] [28805] (audio_device_impl.cc:573): output: 1
+[2024-12-06 19:41:48.592] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 19:41:48.592] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 19:41:48.592] [28805] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-06 19:41:48.592] [28805] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-06 19:41:48.592] [28805] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-06 19:41:48.592] [28805] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2024-12-06 19:41:48.592] [28805] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-06 19:41:48.592] [28805] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-12-06 19:41:48.592] [28805] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-12-06 19:41:48.592] [28805] (audio_device_impl.cc:619): output: 1
+[2024-12-06 19:41:48.592] [28805] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-12-06 19:41:48.592] [28805] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-06 19:41:48.592] [28805] (engine.cpp:220): *** OnDevicesChanged:
+[2024-12-06 19:41:48.592] [28805] (engine.cpp:221): * audioInput:
+[2024-12-06 19:41:48.592] [28805] (engine.cpp:224): - default: Alder Lake PCH-P High Definition Audio Controller Headphones Stereo Microphone ()
+[2024-12-06 19:41:48.592] [28805] (engine.cpp:224): - Alder Lake PCH-P High Definition Audio Controller Headphones Stereo Microphone ()
+[2024-12-06 19:41:48.592] [28805] (engine.cpp:224): - Alder Lake PCH-P High Definition Audio Controller Digital Microphone ()
+[2024-12-06 19:41:48.592] [28805] (engine.cpp:226): * audioOutput:
+[2024-12-06 19:41:48.592] [28805] (engine.cpp:229): - default: Alder Lake PCH-P High Definition Audio Controller Headphones ()
+[2024-12-06 19:41:48.592] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller HDMI / DisplayPort 3 Output ()
+[2024-12-06 19:41:48.592] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller HDMI / DisplayPort 2 Output ()
+[2024-12-06 19:41:48.592] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller HDMI / DisplayPort 1 Output ()
+[2024-12-06 19:41:48.592] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller Headphones ()
+[2024-12-06 19:41:48.593] [28805] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-06 19:41:48.593] [28805] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-06 19:41:48.593] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 19:41:48.593] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 19:41:48.593] [28805] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-06 19:41:48.593] [28805] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-06 19:41:48.593] [28805] (audio_device_impl.cc:573): output: 1
+[2024-12-06 19:41:48.593] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 19:41:48.593] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 19:41:48.593] [28805] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-06 19:41:48.593] [28805] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-06 19:41:48.593] [28805] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-06 19:41:48.593] [28805] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2024-12-06 19:41:48.593] [28805] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-06 19:41:48.593] [28805] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-12-06 19:41:48.594] [28805] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-12-06 19:41:48.594] [28805] (audio_device_impl.cc:619): output: 1
+[2024-12-06 19:41:48.594] [28805] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-12-06 19:41:48.594] [28805] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-06 21:56:13.275] [28785] JS console: [GatewaySocket] [CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zstd-stream
+[2024-12-06 21:56:13.963] [28785] JS console: [GatewaySocket] [CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 687 ms
+[2024-12-06 21:56:13.964] [28785] JS console: [GatewaySocket] [RESUME] resuming session 242e0642ecb5d0e9a785016bb72a9e53, seq: 899
+[2024-12-06 21:56:14.428] [28785] JS console: [GatewaySocket] [RESUMED] took 1153ms, replayed 0 events, new seq: 901
+[2024-12-06 21:57:19.933] [28805] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-06 21:57:19.933] [28805] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-06 21:57:19.933] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 21:57:19.933] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 21:57:19.933] [28805] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-06 21:57:19.934] [28805] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-06 21:57:19.935] [28805] (audio_device_impl.cc:573): output: 0
+[2024-12-06 21:57:19.935] [28805] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2024-12-06 21:57:19.935] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(1)
+[2024-12-06 21:57:19.935] [28805] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-06 21:57:19.935] [28805] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-06 21:57:19.935] [28805] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-06 21:57:19.935] [28805] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2024-12-06 21:57:19.935] [28805] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-06 21:57:19.935] [28805] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-12-06 21:57:19.935] [28805] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-12-06 21:57:19.936] [28805] (audio_device_impl.cc:619): output: 1
+[2024-12-06 21:57:19.936] [28805] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-12-06 21:57:19.936] [28805] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-06 21:57:19.936] [28805] (engine.cpp:220): *** OnDevicesChanged:
+[2024-12-06 21:57:19.936] [28805] (engine.cpp:221): * audioInput:
+[2024-12-06 21:57:19.936] [28805] (engine.cpp:224): - default: Mustang TWS ()
+[2024-12-06 21:57:19.936] [28805] (engine.cpp:224): - Alder Lake PCH-P High Definition Audio Controller Headphones Stereo Microphone ()
+[2024-12-06 21:57:19.936] [28805] (engine.cpp:224): - Alder Lake PCH-P High Definition Audio Controller Digital Microphone ()
+[2024-12-06 21:57:19.936] [28805] (engine.cpp:224): - Mustang TWS ()
+[2024-12-06 21:57:19.936] [28805] (engine.cpp:226): * audioOutput:
+[2024-12-06 21:57:19.936] [28805] (engine.cpp:229): - default: Mustang TWS ()
+[2024-12-06 21:57:19.936] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller HDMI / DisplayPort 3 Output ()
+[2024-12-06 21:57:19.936] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller HDMI / DisplayPort 2 Output ()
+[2024-12-06 21:57:19.937] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller HDMI / DisplayPort 1 Output ()
+[2024-12-06 21:57:19.937] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller Headphones ()
+[2024-12-06 21:57:19.937] [28805] (engine.cpp:229): - Mustang TWS ()
+[2024-12-06 21:57:19.938] [28805] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-06 21:57:19.938] [28805] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-06 21:57:19.938] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 21:57:19.938] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 21:57:19.938] [28805] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-06 21:57:19.939] [28805] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-06 21:57:19.941] [28805] (audio_device_impl.cc:573): output: 0
+[2024-12-06 21:57:19.941] [28805] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2024-12-06 21:57:19.941] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(1)
+[2024-12-06 21:57:19.941] [28805] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-06 21:57:19.941] [28805] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-06 21:57:19.941] [28805] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-06 21:57:19.941] [28805] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2024-12-06 21:57:19.941] [28805] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-06 21:57:19.941] [28805] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-12-06 21:57:19.942] [28805] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-12-06 21:57:19.943] [28805] (audio_device_impl.cc:619): output: 1
+[2024-12-06 21:57:19.943] [28805] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-12-06 21:57:19.943] [28805] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-06 22:46:43.562] [28805] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-06 22:46:43.562] [28805] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-06 22:46:43.562] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 22:46:43.562] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 22:46:43.562] [28805] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-06 22:46:43.563] [28805] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-06 22:46:43.565] [28805] (audio_device_impl.cc:573): output: 1
+[2024-12-06 22:46:43.565] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 22:46:43.565] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 22:46:43.565] [28805] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-06 22:46:43.565] [28805] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-06 22:46:43.565] [28805] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-06 22:46:43.565] [28805] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2024-12-06 22:46:43.565] [28805] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-06 22:46:43.565] [28805] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-12-06 22:46:43.566] [28805] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-12-06 22:46:43.568] [28805] (audio_device_impl.cc:619): output: 1
+[2024-12-06 22:46:43.568] [28805] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-12-06 22:46:43.568] [28805] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-06 22:46:43.568] [28805] (engine.cpp:220): *** OnDevicesChanged:
+[2024-12-06 22:46:43.568] [28805] (engine.cpp:221): * audioInput:
+[2024-12-06 22:46:43.568] [28805] (engine.cpp:224): - default: Alder Lake PCH-P High Definition Audio Controller Headphones Stereo Microphone ()
+[2024-12-06 22:46:43.568] [28805] (engine.cpp:224): - Alder Lake PCH-P High Definition Audio Controller Headphones Stereo Microphone ()
+[2024-12-06 22:46:43.568] [28805] (engine.cpp:224): - Alder Lake PCH-P High Definition Audio Controller Digital Microphone ()
+[2024-12-06 22:46:43.568] [28805] (engine.cpp:226): * audioOutput:
+[2024-12-06 22:46:43.568] [28805] (engine.cpp:229): - default: Alder Lake PCH-P High Definition Audio Controller Headphones ()
+[2024-12-06 22:46:43.568] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller HDMI / DisplayPort 3 Output ()
+[2024-12-06 22:46:43.568] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller HDMI / DisplayPort 2 Output ()
+[2024-12-06 22:46:43.568] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller HDMI / DisplayPort 1 Output ()
+[2024-12-06 22:46:43.568] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller Headphones ()
+[2024-12-06 22:46:43.569] [28805] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-06 22:46:43.569] [28805] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-06 22:46:43.569] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 22:46:43.569] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 22:46:43.569] [28805] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-06 22:46:43.570] [28805] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-06 22:46:43.572] [28805] (audio_device_impl.cc:573): output: 1
+[2024-12-06 22:46:43.572] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 22:46:43.572] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 22:46:43.572] [28805] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-06 22:46:43.572] [28805] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-06 22:46:43.572] [28805] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-06 22:46:43.572] [28805] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2024-12-06 22:46:43.572] [28805] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-06 22:46:43.572] [28805] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-12-06 22:46:43.573] [28805] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-12-06 22:46:43.574] [28805] (audio_device_impl.cc:619): output: 1
+[2024-12-06 22:46:43.575] [28805] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-12-06 22:46:43.575] [28805] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-06 22:50:48.757] [28805] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-06 22:50:48.757] [28805] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-06 22:50:48.757] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 22:50:48.757] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 22:50:48.757] [28805] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-06 22:50:48.758] [28805] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-06 22:50:48.758] [28805] (audio_device_impl.cc:573): output: 0
+[2024-12-06 22:50:48.758] [28805] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2024-12-06 22:50:48.758] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(1)
+[2024-12-06 22:50:48.758] [28805] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-06 22:50:48.758] [28805] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-06 22:50:48.758] [28805] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-06 22:50:48.758] [28805] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2024-12-06 22:50:48.758] [28805] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-06 22:50:48.758] [28805] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-12-06 22:50:48.758] [28805] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-12-06 22:50:48.758] [28805] (audio_device_impl.cc:619): output: 1
+[2024-12-06 22:50:48.758] [28805] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-12-06 22:50:48.758] [28805] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-06 22:50:48.758] [28805] (engine.cpp:220): *** OnDevicesChanged:
+[2024-12-06 22:50:48.758] [28805] (engine.cpp:221): * audioInput:
+[2024-12-06 22:50:48.758] [28805] (engine.cpp:224): - default: Mustang TWS ()
+[2024-12-06 22:50:48.758] [28805] (engine.cpp:224): - Alder Lake PCH-P High Definition Audio Controller Headphones Stereo Microphone ()
+[2024-12-06 22:50:48.758] [28805] (engine.cpp:224): - Alder Lake PCH-P High Definition Audio Controller Digital Microphone ()
+[2024-12-06 22:50:48.758] [28805] (engine.cpp:224): - Mustang TWS ()
+[2024-12-06 22:50:48.758] [28805] (engine.cpp:226): * audioOutput:
+[2024-12-06 22:50:48.758] [28805] (engine.cpp:229): - default: Mustang TWS ()
+[2024-12-06 22:50:48.758] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller HDMI / DisplayPort 3 Output ()
+[2024-12-06 22:50:48.758] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller HDMI / DisplayPort 2 Output ()
+[2024-12-06 22:50:48.758] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller HDMI / DisplayPort 1 Output ()
+[2024-12-06 22:50:48.758] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller Headphones ()
+[2024-12-06 22:50:48.758] [28805] (engine.cpp:229): - Mustang TWS ()
+[2024-12-06 22:50:48.759] [28805] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-06 22:50:48.759] [28805] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-06 22:50:48.759] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 22:50:48.759] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 22:50:48.759] [28805] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-06 22:50:48.759] [28805] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-06 22:50:48.759] [28805] (audio_device_impl.cc:573): output: 0
+[2024-12-06 22:50:48.759] [28805] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2024-12-06 22:50:48.759] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(1)
+[2024-12-06 22:50:48.759] [28805] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-06 22:50:48.759] [28805] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-06 22:50:48.759] [28805] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-06 22:50:48.759] [28805] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2024-12-06 22:50:48.759] [28805] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-06 22:50:48.759] [28805] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-12-06 22:50:48.760] [28805] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-12-06 22:50:48.760] [28805] (audio_device_impl.cc:619): output: 1
+[2024-12-06 22:50:48.760] [28805] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-12-06 22:50:48.760] [28805] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-06 22:52:36.849] [28805] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-06 22:52:36.849] [28805] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-06 22:52:36.849] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 22:52:36.849] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 22:52:36.849] [28805] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-06 22:52:36.849] [28805] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-06 22:52:36.849] [28805] (audio_device_impl.cc:573): output: 1
+[2024-12-06 22:52:36.849] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 22:52:36.849] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 22:52:36.849] [28805] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-06 22:52:36.849] [28805] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-06 22:52:36.849] [28805] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-06 22:52:36.849] [28805] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2024-12-06 22:52:36.849] [28805] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-06 22:52:36.849] [28805] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-12-06 22:52:36.849] [28805] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-12-06 22:52:36.849] [28805] (audio_device_impl.cc:619): output: 1
+[2024-12-06 22:52:36.849] [28805] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-12-06 22:52:36.849] [28805] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-06 22:52:36.849] [28805] (engine.cpp:220): *** OnDevicesChanged:
+[2024-12-06 22:52:36.849] [28805] (engine.cpp:221): * audioInput:
+[2024-12-06 22:52:36.849] [28805] (engine.cpp:224): - default: Alder Lake PCH-P High Definition Audio Controller Headphones Stereo Microphone ()
+[2024-12-06 22:52:36.849] [28805] (engine.cpp:224): - Alder Lake PCH-P High Definition Audio Controller Headphones Stereo Microphone ()
+[2024-12-06 22:52:36.849] [28805] (engine.cpp:224): - Alder Lake PCH-P High Definition Audio Controller Digital Microphone ()
+[2024-12-06 22:52:36.849] [28805] (engine.cpp:226): * audioOutput:
+[2024-12-06 22:52:36.849] [28805] (engine.cpp:229): - default: Alder Lake PCH-P High Definition Audio Controller Headphones ()
+[2024-12-06 22:52:36.849] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller HDMI / DisplayPort 3 Output ()
+[2024-12-06 22:52:36.849] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller HDMI / DisplayPort 2 Output ()
+[2024-12-06 22:52:36.849] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller HDMI / DisplayPort 1 Output ()
+[2024-12-06 22:52:36.849] [28805] (engine.cpp:229): - Alder Lake PCH-P High Definition Audio Controller Headphones ()
+[2024-12-06 22:52:36.850] [28805] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-06 22:52:36.850] [28805] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-06 22:52:36.850] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 22:52:36.850] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 22:52:36.850] [28805] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-06 22:52:36.850] [28805] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-06 22:52:36.850] [28805] (audio_device_impl.cc:573): output: 1
+[2024-12-06 22:52:36.850] [28805] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-06 22:52:36.850] [28805] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-06 22:52:36.850] [28805] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-06 22:52:36.850] [28805] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-06 22:52:36.850] [28805] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-06 22:52:36.850] [28805] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2024-12-06 22:52:36.850] [28805] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-06 22:52:36.850] [28805] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-12-06 22:52:36.851] [28805] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-12-06 22:52:36.851] [28805] (audio_device_impl.cc:619): output: 1
+[2024-12-06 22:52:36.851] [28805] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-12-06 22:52:36.851] [28805] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-06 23:02:33.680] [28785] JS console: [GatewaySocket] [WS CLOSED] (false, 1006, ) retrying in 2.06 seconds.
+[2024-12-06 23:02:35.849] [28785] JS console: [GatewaySocket] [CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zstd-stream
+[2024-12-06 23:02:36.482] [28785] JS console: [GatewaySocket] [CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 633 ms
+[2024-12-06 23:02:36.483] [28785] JS console: [GatewaySocket] [RESUME] resuming session 242e0642ecb5d0e9a785016bb72a9e53, seq: 1168
+[2024-12-06 23:02:37.856] [28785] JS console: [GatewaySocket] [RESUMED] took 2007ms, replayed 0 events, new seq: 1170
+[2024-12-06 23:43:27.887] [28785] JS console: [GatewaySocket] [ACK TIMEOUT] reconnecting in 2.94 seconds.
+[2024-12-06 23:43:30.849] [28785] JS console: [GatewaySocket] [CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zstd-stream
+[2024-12-06 23:43:31.579] [28785] JS console: [GatewaySocket] [CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 729 ms
+[2024-12-06 23:43:31.579] [28785] JS console: [GatewaySocket] [RESUME] resuming session 242e0642ecb5d0e9a785016bb72a9e53, seq: 1288
+[2024-12-06 23:43:32.852] [28785] JS console: [GatewaySocket] [RESUMED] took 2002ms, replayed 0 events, new seq: 1297
+[2024-12-07 01:27:46.312] [45617] (region_latency_tester.cpp:72): Sending 5 latency test pings to region india
+[2024-12-07 01:27:46.312] [45617] (region_latency_tester.cpp:72): Sending 5 latency test pings to region hongkong
+[2024-12-07 01:27:46.312] [45617] (region_latency_tester.cpp:72): Sending 5 latency test pings to region singapore
+[2024-12-07 01:27:46.312] [45617] (region_latency_tester.cpp:72): Sending 5 latency test pings to region dubai
+[2024-12-07 01:27:46.312] [45617] (region_latency_tester.cpp:72): Sending 5 latency test pings to region japan
+[2024-12-07 01:27:51.317] [45617] (region_latency_tester.cpp:176): Timing out 3 remaining latency test pings
+[2024-12-07 01:27:51.317] [45617] (region_latency_tester.cpp:283): Average RTT for region india is 54.25
+[2024-12-07 01:27:51.317] [45617] (region_latency_tester.cpp:283): Average RTT for region hongkong is 144.25
+[2024-12-07 01:27:51.317] [45617] (region_latency_tester.cpp:283): Average RTT for region singapore is 115.5
+[2024-12-07 01:27:51.317] [45617] (region_latency_tester.cpp:283): Average RTT for region dubai is 311.75
+[2024-12-07 01:27:51.317] [45617] (region_latency_tester.cpp:283): Average RTT for region japan is 199
+[2024-12-07 02:18:38.652] [28785] JS console: [GatewaySocket] [CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zstd-stream
+[2024-12-07 02:18:39.331] [28785] JS console: [GatewaySocket] [CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 678 ms
+[2024-12-07 02:18:39.331] [28785] JS console: [GatewaySocket] [RESUME] resuming session 242e0642ecb5d0e9a785016bb72a9e53, seq: 2268
+[2024-12-07 02:18:39.857] [28785] JS console: [GatewaySocket] [RESUMED] took 1204ms, replayed 0 events, new seq: 2269

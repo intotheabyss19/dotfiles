@@ -1,0 +1,11 @@
+[Default Applications]
+x-scheme-handler/discord-589393213723246592=discord-589393213723246592.desktop
+application/pdf=org.pwmt.zathura.desktop
+inode/symlink=balena-etcher.desktop
+application/vnd.debian.binary-package=discord.desktop
+image/webp=mupdf.desktop
+
+[Added Associations]
+inode/symlink=balena-etcher.desktop;
+application/vnd.debian.binary-package=discord.desktop;
+image/webp=sxiv.desktop;mupdf.desktop;

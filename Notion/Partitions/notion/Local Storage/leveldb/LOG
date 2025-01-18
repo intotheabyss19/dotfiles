@@ -1,0 +1,18 @@
+2025/01/18-13:03:39.350 37ac Reusing MANIFEST /home/ysh/.config/Notion/Partitions/notion/Local Storage/leveldb/MANIFEST-000001
+2025/01/18-13:03:39.351 37ac Recovering log #12
+2025/01/18-13:03:39.351 37ac Reusing old log /home/ysh/.config/Notion/Partitions/notion/Local Storage/leveldb/000012.log 
+2025/01/18-13:04:40.565 3796 Level-0 table #16: started
+2025/01/18-13:04:40.577 3796 Level-0 table #16: 284245 bytes OK
+2025/01/18-13:04:40.579 3796 Delete type=0 #12
+2025/01/18-13:04:40.580 3796 Compacting 4@0 + 1@1 files
+2025/01/18-13:04:40.605 3796 Generated table #17@0: 81 keys, 1918598 bytes
+2025/01/18-13:04:40.606 3796 Compacted 4@0 + 1@1 files => 1918598 bytes
+2025/01/18-13:04:40.607 3796 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/01/18-13:04:40.607 3796 Delete type=2 #7
+2025/01/18-13:04:40.607 3796 Delete type=2 #9
+2025/01/18-13:04:40.607 3796 Delete type=2 #11
+2025/01/18-13:04:40.607 3796 Delete type=2 #13
+2025/01/18-13:04:40.607 3796 Delete type=2 #16
+2025/01/18-13:06:03.409 3796 Level-0 table #19: started
+2025/01/18-13:06:03.425 3796 Level-0 table #19: 565958 bytes OK
+2025/01/18-13:06:03.429 3796 Delete type=0 #15
