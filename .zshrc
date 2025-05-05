@@ -21,6 +21,7 @@ alias leet='nvim leetcode.nvim'
 alias cat='bat -p'
 alias cd='z'
 alias zz='z -'
+alias ss='sudo systemctl'
 
 # Persistent and shared history
 HISTSIZE=10000
