@@ -1,3 +1,6 @@
-2025/01/04-12:31:32.597 1627 Reusing MANIFEST /home/ysh/.config/discord/Local Storage/leveldb/MANIFEST-000001
-2025/01/04-12:31:32.602 1627 Recovering log #31
-2025/01/04-12:31:32.602 1627 Reusing old log /home/ysh/.config/discord/Local Storage/leveldb/000031.log 
+2025/05/05-15:12:59.414 e45 Reusing MANIFEST /home/ysh/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2025/05/05-15:12:59.422 e45 Recovering log #263
+2025/05/05-15:12:59.423 e45 Reusing old log /home/ysh/.config/discord/Local Storage/leveldb/000263.log 
+2025/05/05-15:19:34.272 e45 Level-0 table #267: started
+2025/05/05-15:19:34.331 e45 Level-0 table #267: 3581117 bytes OK
+2025/05/05-15:19:34.336 e45 Delete type=0 #263

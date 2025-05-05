@@ -74,3 +74,5 @@
   from: 'serviceWorker',
   type: 'cachePutError'
 }
+[2025-01-18 18:56:30.347] [info]                         Quitting...
+[2025-01-18 18:56:30.424] [info]                         Window with id 1 closed

@@ -1,11 +1,12 @@
 {
   "chromiumSwitches": {},
-  "IS_MAXIMIZED": false,
+  "IS_MAXIMIZED": true,
   "IS_MINIMIZED": false,
   "WINDOW_BOUNDS": {
     "x": 8,
-    "y": 46,
-    "width": 946,
-    "height": 1024
-  }
+    "y": 43,
+    "width": 1903,
+    "height": 1028
+  },
+  "BACKGROUND_COLOR": "#121214"
 }

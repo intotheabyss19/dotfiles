@@ -29,8 +29,8 @@ keymap = [
 	{ on = "<PageUp>",     run = "arrow -100%", desc = "Move cursor up one page" },
 	{ on = "<PageDown>",   run = "arrow 100%",  desc = "Move cursor down one page" },
 
-	{ on = [ "g", "g" ], run = "arrow -99999999", desc = "Move cursor to the top" },
-	{ on = "G",          run = "arrow 99999999",  desc = "Move cursor to the bottom" },
+	{ on = [ "g", "g" ], run = "arrow top", desc = "Move cursor to the top" },
+	{ on = "G",          run = "arrow bot",  desc = "Move cursor to the bottom" },
 
 	# Navigation
 	{ on = "h", run = "leave", desc = "Go back to the parent directory" },
@@ -127,6 +127,7 @@ keymap = [
 	{ on = [ "g", "h" ],       run = "cd ~",             desc = "Go home" },
 	{ on = [ "g", "c" ],       run = "cd ~/.config",     desc = "Goto ~/.config" },
 	{ on = [ "g", "d" ],       run = "cd ~/Downloads",   desc = "Goto ~/Downloads" },
+	{ on = [ "g", "p" ],       run = "cd ~/Projects",   desc = "Goto ~/Projects" },
 	{ on = [ "g", "<Space>" ], run = "cd --interactive", desc = "Jump interactively" },
 
 	# Tabs
@@ -285,8 +286,11 @@ keymap = [
 	{ on = "P", run = "paste --before",                            desc = "Paste the copied characters before the cursor" },
 
 	# Undo/Redo
-	{ on = "u",     run = "undo", desc = "Undo the last operation" },
-	{ on = "<C-r>", run = "redo", desc = "Redo the last operation" },
+	# { on = "u",     run = "undo", desc = "Undo the last operation" },
+  { on = "u", run = "plugin restore", desc = "Restore last deleted files/folders" },
+  # or use "d + u" like me
+  # { on = ["d", "u"], run = "plugin restore", desc = "Restore last deleted files/folders" },
+  { on = "<C-r>", run = "redo", desc = "Redo the last operation" },
 
 	# Help
 	{ on = "~",    run = "help", desc = "Open help" },
