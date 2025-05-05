@@ -1,0 +1,50 @@
+format = "$directory $character$username $fill $time\n [󱞪](fg:iris) "
+palette = "rose-pine-moon"
+add_newline = false
+
+[palettes.rose-pine-moon]
+overlay = '#393552'
+love = '#eb6f92'
+gold = '#f6c177'
+rose = '#ea9a97'
+pine = '#3e8fb0'
+foam = '#9ccfd8'
+iris = '#c4a7e7'
+
+[directory]
+format = "(fg:overlay)[$path]($style)(fg:overlay)"
+style = "fg:foam"
+truncation_length = 3
+truncation_symbol = ""
+
+[character]
+success_symbol = "[❯](love)[❯](gold)[❯](rose)"
+
+[directory.substitutions]
+Documents = "󰈙"
+Downloads = " "
+Music = " "
+Pictures = " "
+
+[fill]
+style = "fg:overlay"
+symbol = " "
+
+[git_branch]
+format = "(fg:overlay)[$symbol $branch ]($style)(fg:overlay)"
+style = "fg:foam"
+symbol = ""
+
+[time]
+disabled = false
+format = "(fg:overlay)[ $time 󰴈 ]($style)(fg:overlay)"
+style = "fg:rose"
+time_format = "%H:%M"
+use_12hr = false
+
+[username]
+disabled = false
+format = "(fg:overlay)[󰧱 $user]($style)(fg:overlay)"
+show_always = true
+style_root = "fg:iris"
+style_user = "fg:iris"

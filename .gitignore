@@ -1,0 +1,35 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!backgrounds
+!dunst
+!fastfetch
+!feh
+!flameshot
+!gtk-2.0
+!gtk-3.0
+!gtk-4.0
+!hypr
+!i3
+!i3status-rust
+!kanata
+!kitty
+!nvim
+!picom
+!polybar
+!rofi
+!scripts
+!sounds
+!waybar
+!wlogout
+!wofi
+!yazi
+!zathura
+!greenclip.toml
+!starship.toml
+
+# ...even if they are in subdirectories
+!*/
+
