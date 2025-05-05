@@ -3,6 +3,8 @@
 
 # But not these files...
 !.gitignore
+!.zshrc
+!.bashrc
 !backgrounds
 !dunst
 !fastfetch
@@ -31,5 +33,5 @@
 !starship.toml
 
 # ...even if they are in subdirectories
-!*/
+# !*/
 
