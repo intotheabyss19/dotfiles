@@ -1,0 +1,132 @@
+#|
+This minimal config changes Caps Lock to act as Caps Lock on quick tap, but
+if held, it will act as Left Ctrl. It also changes the backtick/grave key to
+act as backtick/grave on quick tap, but change ijkl keys to arrow keys on hold.
+
+This text between the two pipe+octothorpe sequences is a multi-line comment.
+|#
+
+;; Text after double-semicolons are single-line comments.
+
+#|
+One defcfg entry may be added, which is used for configuration key-pairs. These
+configurations change kanata's behaviour at a more global level than the other
+configuration entries.
+|#
+
+(defcfg
+  #|
+  This configuration will process all keys pressed inside of kanata, even if
+  they are not mapped in defsrc. This is so that certain actions can activate
+  at the right time for certain input sequences. By default, unmapped keys are
+  not processed through kanata due to a Windows issue related to AltGr. If you
+  use AltGr in your keyboard, you will likely want to follow the simple.kbd
+  file while unmapping lctl and ralt from defsrc.
+  |#
+  process-unmapped-keys no
+  movemouse-smooth-diagonals yes
+  concurrent-tap-hold yes
+  linux-dev /dev/input/by-path/platform-i8042-serio-0-event-kbd
+)
+
+
+(defsrc
+  esc prnt powr
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt menu rctl
+)
+
+;; Define tap and hold times
+(defvar
+  tap-time 200
+  hold-time 250
+  sp1 5
+  sp2 1
+  sp3 7
+  sp4 1
+)
+
+(deflayer default
+  @esc  prnt  @powr
+  @grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  @caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt rmet rctl
+)
+
+#| (deflayer caps_custom
+  esc  M-prnt  @powr
+  grv  M-1    M-2    M-3    M-4    M-5    M-6    M-7    M-8    M-9    M-0    M--    M-=    bspc
+  tab  @caps_mouse    M-w    M-e    M-r    M-t    M-y    M-u    M-i    M-o    M-p    M-[    M-]    M-\
+  lmet  @caps_arrows   M-s    M-d    M-f    M-g    M-h    M-j    M-k    M-l    M-;    M-'    ret
+  lsft M-z    M-x    M-c    M-v    M-b    M-n    M-m    M-,    M-.    M-/    rsft
+  lctl lmet lalt           M-spc            ralt rmet rctl
+)
+|#
+
+(deflayer caps_custom
+  esc  prnt  @powr
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  @caps_mouse    w    e    r    t    y    u    i    o    p    [    ]    \
+  lmet  @caps_arrows   s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt rmet rctl
+)
+
+(deflayer arrows
+  _  _  _
+  _  _  _        _    _    _    _    _    _    _    _    _    _    _
+  _  _  C-right  _    _    _    _    _    _    _    _    _    _    _
+  _  _  _        _    _    _    left down up   rght _   _   _
+  _  _  _        _    _ C-left  _    _    _    _    _    rsft
+  _  _  _           _            _ _ _
+)
+
+(deflayer mouse
+  _  _ _
+  _  _    _    _    _    _    _    _    _    _    _    _    _    _
+  _  _    @fst @slw _    _    _    _   @mw-u @mw-l    @mw-r    _    _    _
+  _ _    _    _    _    _  @ms-l @ms-d  @ms-u  @ms-r  mrgt  _   ret
+  _ _    _    _    _    _    _    @mw-d  _    _    _    _
+  _ _ _           mlft            _ _ _
+)
+
+(defalias
+
+  ms-l (movemouse-left $sp1 $sp2)
+  ms-d (movemouse-down $sp1 $sp2)
+  ms-u (movemouse-up $sp1 $sp2)
+  ms-r (movemouse-right $sp1 $sp2)
+
+  ms-ul (multi (movemouse-up $sp3 $sp4) (movemouse-left $sp3 $sp4))
+  ms-ur (multi (movemouse-up $sp3 $sp4) (movemouse-right $sp3 $sp4))
+  ms-dl (multi (movemouse-down $sp3 $sp4) (movemouse-left $sp3 $sp4))
+  ms-dr (multi (movemouse-down $sp3 $sp4) (movemouse-right $sp3 $sp4))
+
+  mw-u (mwheel-up 50 100)
+  mw-d (mwheel-down 50 100)
+  mw-l (mwheel-left 5 20)
+  mw-r (mwheel-right 5 20)
+  fst (movemouse-speed 450)
+  slw (movemouse-speed 50)
+
+  caps (tap-hold-press 100 150 esc (multi lmet (layer-while-held caps_custom)))
+  caps_mouse (layer-while-held mouse)
+  caps_arrows (layer-while-held arrows)
+  grv (tap-hold-press 200 200 grv (layer-while-held arrows))
+  esc (tap-hold-press 100 300 esc caps)
+
+  powr (tap-hold-press 100 5000 M-A-f4 powr)
+)
+
+#|
+  ms-l (movemouse-accel-left $sp1 $sp2 $sp3 $sp4)
+  ms-d (movemouse-accel-down $sp1 $sp2 $sp3 $sp4)
+  ms-u (movemouse-accel-up $sp1 $sp2 $sp3 $sp4)
+  ms-r (movemouse-accel-right $sp1 $sp2 $sp3 $sp4)
+
+|#

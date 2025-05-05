@@ -1,0 +1,101 @@
+{
+  "position": "top",
+  "margin-top": 4,
+  "margin-bottom": -2,
+  "margin-left": 4,
+  "margin-right": 4,
+  "modules-left": ["custom/arch", "hyprland/workspaces"],
+  "modules-center": ["hyprland/window"],
+  "modules-right": ["network", "pulseaudio", "group/hardware", "battery", "clock", "custom/powermenu"],
+  "group/hardware": {
+    "orientation": "horizontal",
+    "modules": [
+      "disk",
+      "memory",
+      "cpu"
+    ]
+  },
+  "clock": {
+    "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15,
+      "tooltip": "false"
+    },
+    "format": "<span size='13000' foreground='#a6e3a1'>{icon} </span> {capacity}%",
+    "format-warning": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {capacity}%",
+    "format-critical": "<span size='13000' foreground='#E38C8F'>{icon} </span> {capacity}%",
+    "format-charging": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+    "format-plugged": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+    "format-alt": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {time}",
+    "format-full": "<span size='13000' foreground='#B1E3AD'>󰂅 </span>{capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    //"format-icons": ["󱃍 ", "󰁺 ", "󰁻 ", "󰁼 ", "󰁽 ", "󰁾 ", "󰁿 ", "󰂀 ", "󰂁 ", "󰂂 ", "󰁹 "],
+    "tooltip-format": "{time}"
+  },
+  //"network": {
+  //  "interval":2,
+  //  "format-wifi": "<span size='11000' foreground='#f5e0dc'>  </span>{essid} ({signalStrength}%) {bandwidthDownBytes}{bandwidthUpBytes}",
+  //  "format-ethernet": "<span size='13000' foreground='#f5e0dc'>  </span>Ethernet ({signalStrength}%) {bandwidthDownBytes}{bandwidthUpBytes}",
+  //  "format-linked": "{ifname} (No IP) ",
+  //  "format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
+  //  "tooltip-format-wifi": "Signal Strength: {signalStrength}%"
+  //},
+  "network": {
+    "interval":2,
+    "format-wifi": "<span size='11000' foreground='#f5e0dc'>  </span>{essid} ({signalStrength}%)",
+    "format-ethernet": "<span size='13000' foreground='#f5e0dc'>  </span>Ethernet ({signalStrength}%)",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
+    "tooltip-format-wifi": "Signal Strength: {signalStrength}%"
+  },
+  "disk": {
+      "format": "   {percentage_used}%",
+      "path": "/",
+      "interval": 30
+  },
+  "memory": {
+      "format": "  {}%",
+      "tooltip": "false",
+      "interval": 5
+    },
+  "cpu": {
+      "format": "  {usage}%",
+      "tooltip": "false",
+      "interval": 5
+    },
+   "custom/powermenu": {
+      "format": "<span size = '10000'> </span>",
+      "tooltip": false,
+      "on-click": "exec wlogout -p layer-shell"
+    },
+    "pulseaudio": {
+      "format": "{volume}% {icon}",
+      "format-bluetooth": "{volume}% {icon}",
+      "format-muted": "",
+      "on-click": "exec pavucontrol",
+      "format-icons": {
+          "headphone": " ",
+          "hands-free": "󰜟 ",
+          "headset": "󰋎 ",
+          "phone": " ",
+          "portable": " ",
+          "car": " ",
+          "default": [" ", " "]
+      }
+    },
+    "hyprland/workspaces": {
+      "on-click": "exec rofi --show drun",
+      "margin-left": 20
+  },
+  "custom/arch": {
+    "margin-right": 20,
+    "format": "󰣇",
+    "tooltip": "false",
+    "on-click": "exec rofi -show drun"
+  }
+  }
+}

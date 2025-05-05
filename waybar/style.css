@@ -1,0 +1,204 @@
+@import "mocha.css"; 
+
+* {
+    border: none;
+    font-family: "CaskaydiaCoverNerdFont";
+    font-size: 10px;
+    min-height: 0px;
+    font-weight: bold;
+}
+
+window#waybar {
+    /*background: rgba(10, 15, 20, 0.70);*/
+    background: transparent;
+    /*background-color: @crust;*/
+    color: @overlay0;
+    transition-property: background-color;
+    transition-duration: 0.1s;
+    /*border-bottom: 1px solid @overlay1;*/
+    border-radius: 7px;
+}
+
+#window {
+    /*background: rgba(30, 30, 20, 0.0);*/
+    border-radius: 20px;
+    font-size: 10px;
+    color: rgba(250, 220, 220, 0.9);
+    margin: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+button {
+    background: rgba(50, 100, 120, 0.50);
+    box-shadow: inset 0 -3px transparent;
+    color: rgba(255, 240, 240, 0.9);
+    border: none;
+    border-radius: 0px;
+}
+
+button:hover {
+    background: inherit;
+    color: @mauve;
+    border-top: 2px solid @mauve;
+}
+
+#workspaces button {
+    padding: 4px 4px;
+}
+
+#workspaces button.focused {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: @rosewater;
+    border-top: 2px solid @rosewater;
+}
+
+#workspaces button.active {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: @mauve;
+    border-top: 2px solid @mauve;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#window,
+#pulseaudio,
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#wireplumber,
+#tray,
+#network,
+#mode,
+#powermenu,
+#scratchpad {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#disk {
+    background: rgba(0, 1, 0, 0.6);
+    color: rgba(100,200,230,1.0);
+    border-bottom: 2px solid rgba(100,200,230,1.0);
+    border-radius: 20px;
+}
+
+#memory {
+    background: rgba(0, 1, 0, 0.6);
+    color: rgba(150,250,200,1.0);
+    border-bottom: 2px solid rgba(150,250,200,1.0);
+    border-radius: 20px;
+}
+
+#cpu {
+    background: rgba(0, 1, 0, 0.6);
+    color: rgba(250,200,155,1.0);
+    border-bottom: 2px solid rgba(250,200,155,1.0);
+    border-radius: 20px;
+}
+
+#network {
+    background: rgba(0, 1, 0, 0.6);
+    color: @yellow;
+    border-bottom: 2px solid @yellow;
+    border-radius: 20px;
+}
+
+#powermenu {
+    background: rgba(0, 1, 0, 0.6);
+    color: @yellow;
+    border-radius: 20px;
+}
+
+#clock {
+    background: rgba(0, 1, 0, 0.6);
+    color: @maroon;
+    border-bottom: 2px solid @maroon;
+    border-radius: 20px;
+}
+
+#clock.date {
+    background: rgba(10, 15, 20, 0.60);
+    color: @mauve;
+    border-bottom: 2px solid @mauve;
+}
+
+#pulseaudio {
+    color: @blue;
+    background: rgba(10, 15, 20, 0.60);
+    border-bottom: 2px solid @blue;
+    border-radius: 20px;
+}
+
+#network {
+    color: @yellow;
+    border-bottom: 2px solid @yellow;
+    border-radius: 20px;
+}
+
+#idle_inhibitor {
+    margin-right: 12px;
+    color: #7cb342;
+}
+
+#idle_inhibitor.activated {
+    color: @red;
+}
+
+#battery {
+    color: @green;
+    background: rgba(10, 15, 20, 0.60);
+    border-radius: 20px;
+    border-bottom: 2px solid @green;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left>widget:first-child>#workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right>widget:last-child>#workspaces {
+    margin-right: 0;
+}
+
+#custom-vpn {
+    color: @lavender;
+    border-radius: 15px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#custom-arch {
+    background: rgba(20, 40, 40, 0.7);
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 100px;
+    color: rgba(150, 200, 255, 1.0);
+    font-size: 22px;
+}
+
+#custom-powermenu {
+    background: rgba(20, 40, 40, 0.7);
+    padding-left: 9px;
+    padding-right: 5px;
+    border-radius: 50px;
+    border-bottom: 2px solid rgba(50, 200, 255, 0.6);
+    border-top: 2px solid rgba(50, 200, 255, 0.6);
+    border-right: 2px solid rgba(50, 200, 255, 0.6);
+    border-left: 2px solid rgba(50, 200, 255, 0.6);
+    color: rgba(50, 200, 255, 1.0);
+    font-size: 20px;
+}

@@ -1,0 +1,19 @@
+[[plugin.deps]]
+use = "boydaihungst/restore"
+rev = "5d22884"
+hash = "8e6fc2d660f661c91e30b10dd1a251b8"
+
+[[flavor.deps]]
+use = "yazi/flavors:catppuccin-mocha"
+rev = "fc8eeaa"
+hash = "407710c2af9621a8351453e637d6c870"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-frappe"
+rev = "b929df6"
+hash = "7780fbbc8965da5a31a76a0dcd4d1216"
+
+[[flavor.deps]]
+use = "BennyOe/tokyo-night"
+rev = "695dac6"
+hash = "a8f426ea0d9cb843b081d62ab01364c8"
